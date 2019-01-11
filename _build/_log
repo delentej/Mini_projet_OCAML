@@ -1,0 +1,35 @@
+### Starting build.
+# Target: ftest.ml.depends, tags: { extension:ml, file:ftest.ml, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules ftest.ml > ftest.ml.depends # cached
+# Target: ford.mli.depends, tags: { extension:mli, file:ford.mli, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules ford.mli > ford.mli.depends # cached
+# Target: graph.mli.depends, tags: { extension:mli, file:graph.mli, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules graph.mli > graph.mli.depends # cached
+# Target: graph.cmi, tags: { byte, compile, extension:mli, file:graph.mli, interf, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o graph.cmi graph.mli # cached
+# Target: ford.cmi, tags: { byte, compile, extension:mli, file:ford.mli, interf, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o ford.cmi ford.mli # cached
+# Target: Gfile.mli.depends, tags: { extension:mli, file:Gfile.mli, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules Gfile.mli > Gfile.mli.depends # cached
+# Target: Gfile.cmi, tags: { byte, compile, extension:mli, file:Gfile.mli, interf, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o Gfile.cmi Gfile.mli # cached
+# Target: ftest.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ftest.cmo, file:ftest.ml, implem, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o ftest.cmo ftest.ml # cached
+# Target: ford.ml.depends, tags: { extension:ml, file:ford.ml, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules ford.ml > ford.ml.depends
+# Target: Gfile.ml.depends, tags: { extension:ml, file:Gfile.ml, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules Gfile.ml > Gfile.ml.depends # cached
+# Target: Gfile.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Gfile.cmo, file:Gfile.ml, implem, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o Gfile.cmo Gfile.ml # cached
+# Target: graph.ml.depends, tags: { extension:ml, file:graph.ml, ocaml, ocamldep, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamldep.opt -modules graph.ml > graph.ml.depends # cached
+# Target: graph.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:graph.cmo, file:graph.ml, implem, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o graph.cmo graph.ml # cached
+# Target: ford.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ford.cmo, file:ford.ml, implem, ocaml, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o ford.cmo ford.ml
++ /home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt -c -o ford.cmo ford.ml
+File "ford.ml", line 74, characters 7-16:
+Warning 26: unused variable list_node.
+# Target: ftest.byte, tags: { byte, dont_link_with, extension:byte, file:ftest.byte, link, ocaml, program, quiet }
+/home/commetud/GEI/OCaml/.opam/4.04.2/bin/ocamlc.opt graph.cmo Gfile.cmo ford.cmo ftest.cmo -o ftest.byte
+# Compilation successful.

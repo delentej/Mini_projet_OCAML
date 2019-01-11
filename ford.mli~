@@ -1,0 +1,12 @@
+open Graph
+
+val find_path: Graph.id list -> int -> 'a Graph.graph -> Graph.id ->  Graph.id list * int
+
+val residual: 'a Graph.graph -> Graph.id list * int -> 'a Graph.graph
+
+val remplir_gr: 'a Graph.graph -> 'a Graph.graph -> 'a Graph.graph
+
+val affiche_chemin: int list -> unit  
+(* Find the best way between id1 and id2 *) 
+(*val ford_fulkerson: 'a graph -> id -> id -> 'a graph*)
+val ford_fulkerson:'a Graph.graph -> Graph.id -> Graph.id -> 'a Graph.graph
